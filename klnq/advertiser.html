@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Iklanqu - Drive, Earn Everywhere</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <link type="text/css" rel="stylesheet" media="screen,projection" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css" />
+        <link type="text/css" rel="stylesheet" media="screen,projection" href="./iklanqu.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+        <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+        <script src="https://use.fontawesome.com/1997ad82f6.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+        <script type="text/javascript">
+            $( document ).ready(function(){
+                
+                $(".button-collapse").sideNav();
+                
+                $('a[href^="#"]').on('click',function (e) {
+            	    e.preventDefault();
+                    
+            	    var target = this.hash;
+            	    var $target = $(target);
+            
+            	    $('html, body').stop().animate({
+            	        'scrollTop': $target.offset().top
+            	    }, 1100, 'swing', function () {
+            	        window.location.hash = target;
+            	    });
+            	});
+            	
+            	$('.carousel.carousel-slider').carousel({fullWidth: true});
+            	
+            	
+            });
+        </script>
+    </head>
+    <body class="grey lighten-2">
+        <div style="max-width:1460px;margin:0 auto;margin-top:0;" class="white ">
+            
+            <!-- Navigation -->
+            <nav class="white black-text" style="z-index:100">
+                <div class="nav-wrapper">
+                  <a href="/index.html" class="brand-logo"><img src="./images/iklanqu-logo.svg" class="header-logo"/></a>
+                  <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons black-text">menu</i></a>
+                  <ul class="right hide-on-med-and-down">
+                        <li><a href="#about" class="black-text">Tentang</a></li>
+                        <li><a href="#how-it-work" class="black-text">Cara Kerja</a></li>
+                        <li><a href="#feature" class="black-text">Fitur</a></li>
+                        <li><a href="#play-store-app-link" class="black-text">Download</a></li>
+                        <a href="/driver.html" style="all: unset;"><span style="cursor: pointer;margin:0 5px 0 15px;font-size:14px;" class="button-driver hoverable">Driver</span></a>
+                        <a href="/advertiser.html" style="all: unset;"><span style="cursor: pointer;margin:0 15px 0 7px;font-size:14px;" class="button-advertiser hoverable">Advertiser</span></a>
+                  </ul>
+                  <ul class="side-nav" id="mobile-demo">
+                    <div class="header-mobile">
+                        <img src="./images/iklanqu-logo.svg" class="header-logo"/>
+                    </div>
+                    <div style="padding:0 0 0 6px;margin-bottom:30px;">
+                        <a href="/driver.html" style="all: unset;"<span style="cursor: pointer;margin:0 5px 0 15px;font-size:14px;width:100%" class="button-driver hoverable">Driver</span></a>
+                        <a href="/advertiser.html" style="all: unset;"><span style="cursor: pointer;margin:0 15px 0 7px;font-size:14px;" class="button-advertiser hoverable">Advertiser</span></a>
+                    </div>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#how-it-work">Cara Kerja</a></li>
+                    <li><a href="#feature">Fitur</a></li>
+                    <li><a href="#play-store-app-link">Download</a></li>
+                  </ul>
+                </div>
+            </nav>
+            <!-- /Navigation -->
+            
+            <!-- Main Wall -->
+            <div id="main-wall" style="background-image: url(./images/advertiser-background.jpg) !important;
+                background-position: bottom;color:#fff;
+                background-size: cover;">
+                <h2>Iklankan Produk Anda<br/>Dilihat Siapa Saja, Dimana Saja<br/>Murah dan Efisien</h2>
+                <p>Daftar sebagai advertiser untuk mulai mengiklankan produk Anda.</p><br/>
+            </div>
+            <!-- /Main Wall -->
+            
+            
+            <!-- Register -->
+            <div class="grey lighten-3 drivers-header center" id="drivers">
+                <h3>Daftar Advertiser</h3>
+            </div>
+            <div class="row grey lighten-3 drivers-content center" style="padding-top:30px;">
+               <form class="col s12">
+                  <div class="row" style="max-width:700px;">
+                    <div class="input-field col s6">
+                      <input id="firstname" type="text" class="validate">
+                      <label for="firstname" data-error="wrong" data-success="right">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input id="lastname" type="text" class="validate">
+                      <label for="lastname" data-error="wrong" data-success="right">Last Name</label>
+                    </div>
+                    <div class="input-field col s12">
+                      <input id="email" type="email" class="validate">
+                      <label for="email" data-error="wrong" data-success="right">Email</label>
+                    </div>
+                    <div class="input-field col s12">
+                      <input id="company" type="text" class="validate">
+                      <label for="company" data-error="wrong" data-success="right">Company</label>
+                    </div>
+                    <div class="input-field col s12">
+                      <input id="address" type="text" class="validate">
+                      <label for="address" data-error="wrong" data-success="right">Address</label>
+                    </div>
+                    <div class="input-field col s12">
+                      <input id="phone" type="text" class="validate">
+                      <label for="phone" data-error="wrong" data-success="right">Phone</label>
+                    </div>
+                    <div class="input-field col s12"><br/>
+                      <input id="phone" type="submit" class="validate waves-effect waves-light btn-large blue darken-3" value="Register"/>
+                    </div>
+                  </div>
+                </form>
+            </div>
+            <!-- /Register -->
+          
+          
+            <!-- Footer -->
+            <div class="footer">
+                <div class="footer-image">
+                </div>
+                <div class="black white-text footer-content">
+                    <div class="row footer-menu">
+                        <div class="col s12 m4 l4 footer-menu-a">
+                                <span style="font-weight:500">PT Iklanqu Solusi Iklan</span><br/>
+                                <span style="font-weight:300">Sudirman Tower, 7th Floor<br/>Jl. Jend. Gatot Subroto Kav 21, Karet Semanggi<br/>Jakarta 12930, Indonesia</span>
+                                <p class="footer-menu-paragraph footer-social-media-button">
+                                    <a href="#"><i class="fa fa-facebook-square fa-2x white-text" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                                    <a href="#"><i class="fa fa-twitter fa-2x white-text" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                                    <a href="#"><i class="fa fa-linkedin-square fa-2x white-text" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                                    <a href="#"><i class="fa fa-instagram fa-2x white-text" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                                </p>
+                        </div>
+                        <div class="col s6 m4 l4 footer-menu-b">
+                            <div class="footer-menu-wrapper">
+                                <p class="footer-menu-paragraph">
+                                    <a href="#about" class="white-text">Tentang</a><br/>
+                                    <a href="#how-it-work" class="white-text">Cara Kerja</a><br/>
+                                    <a href="#feature" class="white-text">Fitur</a><br/>
+                                    <a href="#play-store-app-link" class="white-text">Download</a><br/>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col s6 m4 l4 footer-menu-c">
+                            <div class="footer-menu-wrapper">
+                                <p class="footer-menu-paragraph">
+                                    <a href="/coming-soon.html" class="white-text">Karir</a><br/>
+                                    <a href="#" class="white-text">Hubungi Kami</a><br/>
+                                    <a href="/coming-soon.html" class="white-text">Media</a><br/>
+                                    <a href="#" class="white-text">Kebijakan Privasi</a><br/>
+                                    <a href="#" class="white-text">Syarat &amp; Ketentuan</a><br/>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col s12 m5 l3 footer-bottom-b-mobile"> 
+                            <div class="row"> 
+                                <div class="col s6 m6 l6" style="padding:0;">
+                                    <img src="./images/playstore.png" style="height:35px;padding:0 0 0 0;"/>
+                                </div>
+                                <div class="col s6 m6 l6" style="padding:0;"> 
+                                    <img src="./images/appstore.png" style="height:35px;padding:0 0 0 0;"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row footer-bottom">
+                        <div class="col s12 m4 l4 footer-bottom-a">
+                            <span class="footer-copyrights">&copy; Copyrights 2017 Iklanqu.</span>
+                        </div>
+                        <div class="col s12 m4 l3 footer-bottom-b"> 
+                            <div class="row"> 
+                                <div class="col s6 m6 l6" style="padding:0;">
+                                    <a href=""><img src="./images/playstore.png" class="footer-bottom-playstore"/></a>
+                                </div>
+                                <div class="col s6 m6 l6" style="padding:0;"> 
+                                    <a href=""><img src="./images/appstore.png" class="footer-bottom-appstore"/></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s0 m0 l1">
+                        </div>
+                        <div class="col s12 m4 l4 change-language-bottom">
+                            <a class='footer-menu-wrapper dropdown-button white-text' href='#' data-activates='dropdown1'><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Indonesian&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down white-text" aria-hidden="true"></i></a>
+                            <ul id='dropdown1' class='dropdown-content'>
+                                <li><a href="#!" class="black-text">Indonesian</a></li>
+                                <li><a href="#!" class="black-text">English</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Footer -->
+        
+        
+        </div>
+    </body>
+</html>
